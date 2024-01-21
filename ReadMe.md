@@ -1,13 +1,12 @@
-First, download the file best_model.ckpt (it is too big to upload to github) and save it in the AttackLa folder.
+First, install CARLA 0.9.10 in your computer, and then download the file best_model.ckpt (it is too big to upload to github) through https://drive.google.com/file/d/1ZVSG-RGZwBRQqcioZ1IEbTjJrgvBBZk4/view?usp=sharing and save it in the AttackLa folder.
 
-
-Second, open an terminal and start CARLA
+Second, open an terminal and start CARLA by the following commands
 
 cd /home/yeda/carla
 
 ./CarlaUE4.sh --world-port=2000 -opengl
 
-Third, run the simulation and evaluation process
+Third, run the simulation and evaluation process by the following commands
 
 cd /home/yeda/TCP
 
