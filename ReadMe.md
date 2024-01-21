@@ -8,7 +8,7 @@ conda activate TCP
 
 Third, open an terminal and start CARLA by the following commands
 
-cd $carla_root$
+cd \$ carla\_root \$
 
 ./CarlaUE4.sh --world-port=2000 -opengl
 
