@@ -21,7 +21,13 @@ from TCP.model import TCP
 from TCP.config import GlobalConfig
 from team_code.planner import RoutePlanner
 
-import attack_implement
+import sys
+import os
+CURRENT_DIR = os.path.split(os.path.abspath(__file__))[0]
+config_path = CURRENT_DIR.rsplit('/', 2)[0]
+print(config_path)
+sys.path.append(config_path+'/description_and_interpreter')
+import attack
 
 SAVE_PATH = os.environ.get('SAVE_PATH', None)
 
@@ -134,7 +140,7 @@ class TCPAgent(autonomous_agent.AutonomousAgent):
 		self.step += 1
 
 		rgb = cv2.cvtColor(input_data['rgb'][1][:, :, :3], cv2.COLOR_BGR2RGB)
-		#rgb = attack_implement.AttackImplement(rgb)
+		rgb = attack.Attack(rgb)
 		bev = cv2.cvtColor(input_data['bev'][1][:, :, :3], cv2.COLOR_BGR2RGB)
 		gps = input_data['gps'][1][:2]
 		speed = input_data['speed'][1]['speed']
