@@ -1,12 +1,13 @@
-attack Name: Strong light exposure attack
+attack name: Strong light exposure attack
 attack target: monocular camera-based end-to-end autonomous driving system
 attack goal: safety hazard
-action: [method, preconditions]
+action: 
   method: [tampering, modified the data captured in the asset]
-  preconditions: [precondition1 and precondition2]
+  preconditions:
     precondition1: [attacker's knowledge, the attacker knows the basic information about the cameras on the victim autonomous driving vehicle]
     precondition2: [attack tool, strong LED light]
-    precondition3: [attacker's capability, attackers can shine LED light at cameras 
-impact: [influenced asset, influence]
+    precondition3: [attacker's capability, attackers can shine LED light at cameras]
+impact: 
   influenced asset: [sensor, rgb_camara_front]
-  influence: [luminance, 300%]
+  influence:
+    luminance: 300%
