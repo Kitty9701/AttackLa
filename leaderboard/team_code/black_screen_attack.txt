@@ -1,2 +1,0 @@
-
-attack target system = tcp_agent
