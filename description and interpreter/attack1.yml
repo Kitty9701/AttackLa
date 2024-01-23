@@ -1,11 +1,11 @@
-attack name: black screen attack
+attack name: Black screen attack
 attack target: monocular camera-based end-to-end autonomous driving system
 attack goal: safety hazard
-action: [method, preconditions]
+action:
   method: [elevation of privilege, shutting off the asset]
-  preconditions: [precondition1 and precondition2]
+  preconditions:
     precondition1: [attacker's knowledge, the attacker knows the basic information about the cameras on the victim autonomous driving vehicle]
     precondition2: [attacker's capability, the attacker can find appropriate attack scenarios] 
-impact: [influenced asset, influence]
+impact:
   influenced asset: [sensor, rgb_camara_front]
   influence: [raw data, 0]
