@@ -1,12 +1,13 @@
-attack Name: Laser beam attack
+attack name: Laser beam attack
 attack target: monocular camera-based end-to-end autonomous driving system
 attack goal: safety hazard
-action: [method, preconditions]
+action:
   method: [spoofing, shooting laser on the camera]
-  preconditions: [precondition1 and precondition2 and precondition3]
+  preconditions:
     precondition1: [attack tool, laser pointer]
     precondition2: [attacker's knowledge, machine learning adversarial sample generation technology] 
     precondition3: [attacker's capability, attackers can aim lasers at cameras on the roadside]
-impact: [influenced asset, influence]
+impact:
   influenced asset: [sensor, rgb_camara_front]
-  influence: [raw_data, spoofed data]
+  influence:
+    raw_data: spoofed data
