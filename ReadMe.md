@@ -23,9 +23,32 @@ Then you can see the black screen attack generated in the simulation, and once t
 
 ## Advanced
 
-If you want to generate you own attack model, please find the file 'attack1.yml' in folder 'description and interpreter' and then modify the attack model as described in my thesis.
+The default attack conducted is black screen attack. If you want to try the other two attacks(strong light exposure attack and laser beam attack),you can interpret the description file by the following commands
+```
+cd description_and_interpreter
+python attack_interpreter.py --attack_description_file attack2.py
+```
+or 
+```
+cd description_and_interpreter
+python attack_interpreter.py --attack_description_file attack3.py
+```
+Then run the commands mentiond in section 'Setup'
+```
+cd $CARLA_ROOT$
+./CarlaUE4.sh --world-port=2000 -opengl
+```
+```
+conda activate AttackLa
+cd AttackLa
+sh leaderboard/scripts/run_evaluation.sh
+```
 
-If you want to change the weather parameters, please find the file 'weather.yml' in folder 'description and interpreter' and then modify the parameters as described in my thesis.
+If you want to generate you own attack model, please find the file 'attack1.yml' in folder 'description_and_interpreter' and then modify the attack model as described in my thesis. Then run the following commands.
+```
+cd description_and_interpreter
+python attack_interpreter.py --attack_description_file attack1.py
+```
 
 ## Citation
 
